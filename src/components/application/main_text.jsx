@@ -7,7 +7,7 @@ const Title_Tab = () => {
     <>
 
       <Box sx={{ fontSize: '40px', position: 'center', borderBottom: '1px solid' }}>
-        profile
+        application
       </Box>
       <Box sx={{ fontSize: '15px', position: 'center', padding: '90px' }}>
         <Typical

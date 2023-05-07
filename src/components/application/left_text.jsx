@@ -6,7 +6,7 @@ const Left_Text = () => {
     <h1>
       <Box sx={{ position: 'absolute', top: "100px", left: "30px", }}>
         <Typical
-          steps={["PROFILE"]}
+          steps={["APPLICATION"]}
           wrapper="h2"
         />
       </Box >
