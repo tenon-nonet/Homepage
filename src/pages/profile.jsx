@@ -1,4 +1,4 @@
-import TITLETABPROFILE from '../components/profile/title_tab';
+import TITLETAB from '../components/title_tab';
 import TABPROFILE from '../components/profile/tab';
 import CENTERTEXTPROFILE from '../components/profile/left_text';
 import MAINTEXTPROFILE from '../components/profile/main_text';
@@ -8,7 +8,7 @@ const Profile = () => {
   return (
     <>
     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <TITLETABPROFILE />
+      <TITLETAB />
       <TABPROFILE/>
       <CENTERTEXTPROFILE/>
       <MAINTEXTPROFILE/>

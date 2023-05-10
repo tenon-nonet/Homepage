@@ -10,35 +10,7 @@ const Title_Tab = () => {
         application
       </Box>
       <Box sx={{ fontSize: '15px', position: 'center', padding: '90px' }}>
-        <Typical
-        steps={["kgjcswmnYGsVBzmUWwTWEZUUaPecWheMyuaGnuUbhB-"]} 
-        wrapper="p"
-        />
-        <br />
-        <Typical
-        steps={["BerzVAMDtDNnDbggDJuiPJEXiJmQtpmAkY-"]} 
-        wrapper="p"
-        />
-        <br />
-        <Typical
-        steps={["rgUHpdsVtcpburcAeN-"]} 
-        wrapper="p"
-        />
-        <br />
-        <Typical
-        steps={["VhszACkDfSpbCFewQxgu-"]} 
-        wrapper="p"
-        />
-        <br />
-        <Typical
-        steps={["mGQKxMHHLgPFwVBLNSQXNghmsJetnURPpjpHFkrzbpQzdyxDzMuQpjdGhDt-"]} 
-        wrapper="p"
-        />
-        <br />
-        <Typical
-        steps={["BerzVAMDtDNnDbggDJuiPJEXiJmQtpmAkYRzpVFrkNkAWiZRuXxxWwDzukrXbRaTAGUQFWp-"]} 
-        wrapper="p"
-        />
+        
       </Box>
 
     </>

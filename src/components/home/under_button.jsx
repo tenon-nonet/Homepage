@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Under_Button = () => {
 
+useEffect(() => {
+  gsap.to(div.current, {
+    backgroundImage: "linear-gradient(to left, #30CFD0, #330867)",
+    duration: 5,
+  });
+ }, [div]);
+
   return (
     <>
       <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 5 }}>
@@ -19,6 +26,8 @@ const Under_Button = () => {
       </Link>
     </Box >
         </>
+
+        
     );
 };
 
