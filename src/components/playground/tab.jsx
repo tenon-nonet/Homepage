@@ -12,8 +12,8 @@ const Under_Button = () => {
           </Link>
         </Box>
         <Box sx={{ position: 'absolute', top: "50px", left: "750px", borderBottom: '1px solid', pb: 1, mr: 2 }}>
-        <Link to="../playground" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <Typography variant="h6">playground</Typography>
+        <Link to="../application" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Typography variant="h6">application</Typography>
           </Link>
         </Box>
       </Box>

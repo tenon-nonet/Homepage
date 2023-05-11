@@ -10,7 +10,7 @@ const Title_Tab = () => {
         profile
       </Box>
       <Box sx={{ fontSize: '15px', position: 'center', padding: '90px' }}>
-        
+        <p>私はてのん。人間のふりをしている。</p>
       </Box>
 
     </>
