@@ -6,10 +6,10 @@ const Title_Tab = () => {
   return (
     <>
 
-      <Box sx={{ fontSize: '40px', position: 'center', borderBottom: '1px solid' }}>
+      <Box sx={{ fontSize: '40px',position: 'absolute',top:'250px', borderBottom: '1px solid' }}>
         profile
       </Box>
-      <Box sx={{ fontSize: '15px', position: 'center', padding: '90px' }}>
+      <Box sx={{ fontSize: '15px', position: 'absolute', top:'350px', padding: '90px' }}>
         <p>私はてのん。人間のふりをしている。</p>
       </Box>
 

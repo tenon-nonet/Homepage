@@ -7,7 +7,7 @@ import { Box } from '@mui/material';
 const Profile = () => {
   return (
     <>
-    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' ,}}>
       <TITLETAB />
       <TABPROFILE/>
       <CENTERTEXTPROFILE/>
