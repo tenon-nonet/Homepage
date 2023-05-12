@@ -5,7 +5,7 @@ const Title_Tab = () => {
   return (
     <>
 
-      <Box sx={{ fontSize: '30px', position: 'absolute', top: "30px", left: "30px" }}>
+      <Box sx={{ fontSize: '40px', position: 'absolute', top: "10px", left: "30px" }}>
         <Link to="../home" style={{ textDecoration: 'none', color: 'inherit' }}>
           HOME Page
         </Link>

@@ -1,6 +1,4 @@
-import { Box, Typography, ImageList,ImageListItem } from '@mui/material';
-import { Link } from 'react-router-dom';
-import Typical from "react-typical";
+import { Box, ImageList,ImageListItem } from '@mui/material';
 
 const itemData =[
   {img: "https://nonet3.files.wordpress.com/2023/05/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2023-05-11-16.08.47.png?w=1024", title: 'Image 1'},
@@ -14,8 +12,8 @@ const Title_Tab = () => {
       </Box>
       <Box sx={{ fontSize: '15px', position: 'absolute', top: '350px', padding: '40px', maxWidth: '70%' }}>
         <h2>・SPDs Threads</h2>
-        
-        <ImageList sx={{ width: 1000, height: 700}} cols={1} rowHeight={1000}>
+
+        {/* <ImageList sx={{ width: 1000, height: 700}} cols={1} rowHeight={1000}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -26,9 +24,9 @@ const Title_Tab = () => {
               />
             </ImageListItem>
           ))}
-        </ImageList>
-        {/* <img class="imgApp" src="https://nonet3.files.wordpress.com/2023/05/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2023-05-11-16.08.47.png?w=1024" alt="出ないなあ、、" height="500px" />
-        <img class="imgApp" src="https://nonet3.files.wordpress.com/2023/05/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2023-05-11-16.09.18efbc882efbc89.png" alt="出ないなあ、、" height="400px" /> */}
+        </ImageList> */}
+        <img class="imgApp" src="https://nonet3.files.wordpress.com/2023/05/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2023-05-11-16.08.47.png?w=1024" alt="出ないなあ、、" height="500px" />
+        <img class="imgApp" src="https://nonet3.files.wordpress.com/2023/05/e382b9e382afe383aae383bce383b3e382b7e383a7e38383e38388-2023-05-11-16.09.18efbc882efbc89.png" alt="出ないなあ、、" height="400px" />
         <p>２ちゃんねる風の掲示板</p>
         <p>PHPを使用して作成。DB操作の基本的な構造を網羅している</p>
         <a href="threads.tenon-nonet.com">threads.tenon-nonet.com</a>

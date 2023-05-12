@@ -1,15 +1,13 @@
-import { Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
-import Typical from "react-typical";
+import { Box, } from '@mui/material';
 
 const Title_Tab = () => {
   return (
     <>
 
-      <Box sx={{ fontSize: '40px',position: 'absolute',top:'250px', borderBottom: '1px solid' }}>
+      <Box sx={{ fontSize: '40px',position: '',top:'px', borderBottom: '1px solid',textAlign:"center" }}>
         profile
       </Box>
-      <Box sx={{ fontSize: '15px', position: 'absolute', top:'350px', padding: '90px' }}>
+      <Box sx={{ fontSize: '15px', position: '', top:'',textAlign:"center" }}>
         <p>私はてのん。人間のふりをしている。</p>
       </Box>
 

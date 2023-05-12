@@ -1,5 +1,4 @@
 import { Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
 import Typical from "react-typical";
 
 const Title_Tab = () => {

@@ -5,6 +5,7 @@ import PROFILE from './pages/profile';
 import PLAYGROUND from './pages/playground';
 import APPLICATION from './pages/application';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -24,5 +25,3 @@ root.render(
     </Routes>
   </BrowserRouter>
 );
-
-
