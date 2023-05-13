@@ -1,5 +1,4 @@
-import { Box, Typography } from '@mui/material';
-import Typical from "react-typical";
+import { Box, } from '@mui/material';
 
 const Title_Tab = () => {
   return (
