@@ -26,14 +26,14 @@ const Main_Text = () => {
       <Box sx={{ fontSize: '40px', position: 'absolute', top: '250px', borderBottom: '1px solid' }}>
         application
       </Box>
-      <Box sx={{ top: '400px',position: 'absolute' }} display="flex" justifyContent="center">
-        <Tabs value={TabValue} onChange={TabChange} aria-label="Tab">
+      <Box sx={{ top: '400px', position: 'absolute', maxWidth: { xs: 320, sm: 600 }, bgcolor: 'background.paper' }} display="flex" justifyContent="center" >
+        <Tabs value={TabValue} onChange={TabChange} variant="scrollable" scrollButtons="auto" aria-label="Tab">
           <Tab label="SPDS THREADS" {...a11yProps(0)} />
           <Tab label="DDDSPEAKER" {...a11yProps(1)} />
           <Tab label="DDDQUIZE" {...a11yProps(2)} />
           <Tab label="BOOKSTAND" {...a11yProps(3)} />
         </Tabs>
-      </Box>
+      </Box >
       <Box sx={{ fontSize: '15px', position: 'absolute', top: '430px', padding: '40px' }} display="flex" justifyContent="center">
         <TabPanel value={TabValue} index={0}>
           <THREADS />
