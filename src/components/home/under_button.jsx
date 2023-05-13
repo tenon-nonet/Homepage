@@ -9,11 +9,11 @@ const Under_Button = () => {
         <Link to="./profile" style={{ textDecoration: 'none', color: 'inherit' }}>
           <Typography variant="h5" sx={{ borderBottom: '1px solid' }}>profile</Typography>
         </Link>
-        <Box sx={{ width: 50 }} />
+        <Box sx={{ width: 50, marginTop: 2 }} />
         <Link to="./application" style={{ textDecoration: 'none', color: 'inherit' }}>
           <Typography variant="h5" sx={{ borderBottom: '1px solid' }}>application</Typography>
         </Link>
-        <Box sx={{ width: 50 }} />
+        <Box sx={{ width: 50, marginTop: 2 }} />
         <Link to="./playground" style={{ textDecoration: 'none', color: 'inherit' }}>
           <Typography variant="h5" sx={{ borderBottom: '1px solid' }}>playground</Typography>
         </Link>
