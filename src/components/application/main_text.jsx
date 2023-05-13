@@ -1,4 +1,5 @@
 //無理やり位置指定してて保守性ないから直しときな
+// もうちょい待ってて
 import { Box, Tabs, Tab } from '@mui/material';
 import TabPanel from '../tabpanel';
 import PropTypes from 'prop-types';
@@ -23,8 +24,8 @@ const Main_Text = () => {
   const TabChange = (event, newValue) => setTab(newValue);
   return (
     <>
-      <Box sx={{ fontSize: '40px', position: 'absolute', top: '250px', borderBottom: '1px solid' }}>
-        application
+      <Box sx={{ fontSize: '15px', position: 'absolute', top: '250px', textAlign: "center" }}>
+        今まで作成したWebアプリ<br />一つ作る毎に、学び、成長している
       </Box>
       <Box sx={{ top: '400px', position: 'absolute', maxWidth: { xs: 320, sm: 600 }, bgcolor: 'background.paper' }} display="flex" justifyContent="center" >
         <Tabs value={TabValue} onChange={TabChange} variant="scrollable" scrollButtons="auto" aria-label="Tab">
