@@ -12,9 +12,17 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
-const pages = ['profile', 'application', 'playground'];
-const settings = ['HOMEPAGE','PROFILE', 'APPLICATION', 'PLAYGROUND', ];
+const pages = [
+  { name: 'profile', link: '/profile' },
+  { name: 'application', link: '/application' },
+  { name: 'playground', link: '/playground' },
+];
+
+const settings = [
+  {name:'Oops! I got caught... Maybe you are lucky today to find me!', link: 'https://ja.wikipedia.org/wiki/%E5%B9%B8%E7%A6%8F'}
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,10 +44,10 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed" top="0px" >
+    <AppBar position="fixed" top="0px" sx={{background:"white"}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <img src="https://nonet3.files.wordpress.com/2023/05/00019-77334530-removebg-preview.png?w=500" alt="Your Logo" width="30px"/>
           <Typography
             variant="h6"
             noWrap
@@ -88,10 +96,11 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" >{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu} component={Link} to={page.link}>
+                  <Typography textAlign="center" sx={{color: "black"}}>{page.name}</Typography>
                 </MenuItem>
               ))}
+
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -116,17 +125,20 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'black', display: 'block' }}
+                component={Link}
+                to={page.link}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
+
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title="Shh...">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="H" src="https://nonet3.files.wordpress.com/2023/05/00005-2704192671-removebg-preview.png?w=500" />
               </IconButton>
@@ -148,9 +160,9 @@ function ResponsiveAppBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
+                <MenuItem key={setting.name} onClick={handleCloseNavMenu} component={Link} to={setting.link}>
+                <Typography textAlign="center" sx={{color: "black"}}>{setting.name}</Typography>
+              </MenuItem>
               ))}
             </Menu>
           </Box>

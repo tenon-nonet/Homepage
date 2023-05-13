@@ -10,7 +10,6 @@ import Container from '@mui/material/Container';
 import Slide from '@mui/material/Slide';
 
 import CENTERTEXTPROFILE from './left_text';
-import TABPROFILE from './tab';
 import MAINTEXTPROFILE from './main_text';
 import TITLETAB from '../title_tab';
 
@@ -41,7 +40,6 @@ export default function HideAppBar(props) {
                     <Toolbar bgcolor="white">
                         <Typography variant="h3" component="div" color="black" >
                             <TITLETAB />
-                            <TABPROFILE />
                         </Typography>
                     </Toolbar>
                 </AppBar>

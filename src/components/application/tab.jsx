@@ -1,26 +1,23 @@
-import { Box, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
-const Under_Button = () => {
+export default function CenteredTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
-    <>
-      <Box display="flex" alignItems="center" >
-        <Box sx={{ position: 'absolute', top: "50px", left: "400px", borderBottom: '1px solid', pb: 1, mr: 2 }}>
-          <Link to="../profile" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <Typography variant="h6">profile</Typography>
-          </Link>
-        </Box>
-        <Box sx={{ position: 'absolute', top: "50px", left: "500px", borderBottom: '1px solid', pb: 1, mr: 2, color: 'grey' }}>
-          <Typography variant="h6">application</Typography>
-        </Box>
-        <Box sx={{ position: 'absolute', top: "50px", left: "640px", borderBottom: '1px solid', pb: 1, mr: 2, }}>
-          <Link to="../playground" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <Typography variant="h6">playground</Typography>
-          </Link>
-        </Box>
-      </Box>    </>
+    <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
+      <Tabs value={value} onChange={handleChange} centered>
+        <Tab label="SPDs Threads" />
+        <Tab label="DDDSPEAKER" />
+        <Tab label="DDDquize" />
+        <Tab label="BOOKSTAND" />
+      </Tabs>
+    </Box>
   );
-};
-
-export default Under_Button;
+}
