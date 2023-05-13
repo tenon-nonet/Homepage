@@ -2,7 +2,6 @@ import { Box, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const Under_Button = () => {
-
   return (
     <>
       <Box sx={{ display: 'flex', alignItems: 'center', marginTop: 5 }}>
@@ -19,8 +18,6 @@ const Under_Button = () => {
         </Link>
       </Box >
     </>
-
-
   );
 }
 export default Under_Button;

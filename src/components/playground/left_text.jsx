@@ -2,7 +2,6 @@ import Typical from "react-typical";
 import { Box } from "@mui/material"
 const Left_Text = () => {
   return (
-
     <h1>
       <Box sx={{ position: 'absolute', top: "100px", left: "30px", }}>
         <Typical
@@ -11,7 +10,6 @@ const Left_Text = () => {
         />
       </Box >
     </h1>
-
   );
 };
 
