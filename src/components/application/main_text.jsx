@@ -19,7 +19,7 @@ const a11yProps = index => {
   };
 };
 const Main_Text = () => {
-  const [TabValue, setTab] = useState(1);
+  const [TabValue, setTab] = useState(0);
   const TabChange = (event, newValue) => setTab(newValue);
   return (
     <>
