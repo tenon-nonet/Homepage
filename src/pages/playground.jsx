@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 const Playground = () => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <LEFTEXTAPPLICATION content="PlayGround"/>
+      <LEFTEXTAPPLICATION content="Playground"/>
       <MAINTEXTPLAYGROUND />
       <APPBARRESPRO />
     </Box>

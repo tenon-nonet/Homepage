@@ -13,7 +13,7 @@ const dddSpeaker = () => {
                         <br /><br />
                         <CardMedia component="img" image="./images/dddspeaker/dddspeaker1.webp" alt="dddspeaker1" style={{ height: "100%" }} />
                         <CardMedia component="img" image="./images/dddspeaker/dddspeaker2.webp" alt="dddspeaker1" style={{ height: "100%" }} />
-                        
+
                 </>
         );
 };

@@ -1,5 +1,5 @@
 //無理やり位置指定してて保守性ないから直しときな
-// もうちょい待ってて
+// もうちょい待ってて先にplaygtoundpage完成させます
 import { Box, Tabs, Tab } from '@mui/material';
 import TabPanel from '../tabpanel';
 import PropTypes from 'prop-types';
