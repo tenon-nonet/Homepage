@@ -5,13 +5,11 @@ import { Box } from '@mui/material';
 
 const Home = () => {
   return (
-    <>
-      <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <CENTERTEXT />
-        <UNDERBUTTON />
-        <APPBARRESPRO/>
-      </Box>
-    </>
+    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <CENTERTEXT />
+      <UNDERBUTTON />
+      <APPBARRESPRO />
+    </Box>
   )
 };
 
