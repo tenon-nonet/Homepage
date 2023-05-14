@@ -37,37 +37,6 @@ function ResponsiveAppBar() {
           >
             HOMEPage
           </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={toggleDrawer(true)}
-              color="black"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="left"
-              open={isOpen}
-              aria-label="メニュー"
-              onClose={toggleDrawer(false)}
-              PaperProps={{
-                sx: {
-                  backgroundColor: "#ffffff",
-                  color: "#ffffff",
-                },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.name} component={Link} to={page.link}>
-                  <Typography fontSize={"20px"} textAlign="center" style={{ marginTop: "20px" }} fontFamily={"sans-serif"} sx={{ color: "black" }}>{page.name}</Typography>
-                </MenuItem>
-              ))}
-            </Drawer>
-          </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -87,6 +56,36 @@ function ResponsiveAppBar() {
           >
             HOMEPage
           </Typography>
+          <IconButton
+            edge="end"
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={toggleDrawer(true)}
+            color="black"
+            sx={{ ml: 3 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Drawer
+            anchor="right"
+            open={isOpen}
+            aria-label="メニュー"
+            onClose={toggleDrawer(false)}
+            PaperProps={{
+              sx: {
+                backgroundColor: "#ffffff",
+                color: "#ffffff",
+              },
+            }}
+          >
+            {pages.map((page) => (
+              <MenuItem key={page.name} component={Link} to={page.link}>
+                <Typography fontSize={"20px"} textAlign="center" style={{ marginTop: "20px" }} fontFamily={"sans-serif"} sx={{ color: "gray" }}>{page.name}</Typography>
+              </MenuItem>
+            ))}
+          </Drawer>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
