@@ -8,6 +8,7 @@ import DESIGN from "./contents/design";
 import FRAMEWORK from "./contents/framework";
 import STUDY from "./contents/study";
 import SERVER from "./contents/server";
+import FadeIn from "../fadeIn";
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -26,7 +27,8 @@ const Main_Text = () => {
   return (
     <>
       <Box sx={{ fontSize: '15px', position: 'absolute', top: '250px', textAlign: "center" }}>
-        生活の全ては学びに繋がる<br />環境を整えることは、最上への最少努力か
+        <FadeIn text="生活の全ては学びに繋がる" />
+        <FadeIn text="環境を整えることは、最上への最少努力か" />
       </Box>
       <Box sx={{ top: '400px', position: 'absolute', maxWidth: { xs: 320, sm: 600 }, bgcolor: 'background.paper' }} display="flex" justifyContent="center" >
         <Tabs value={TabValue} onChange={TabChange} variant="scrollable" scrollButtons="auto" aria-label="Tab">
