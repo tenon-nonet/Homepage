@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-
+import FadeIn from "../fadeIn";
 const Main_Text = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const Main_Text = () => {
         profile
       </Box>
       <Box sx={{ fontSize: '15px', textAlign: "center" }}>
-        <Typography component="p">私はてのん。人間のふりをしている。</Typography>
+        <Typography component="p"><FadeIn text="私はてのん。人間のふりをしている。" /></Typography>
       </Box>
     </>
   );

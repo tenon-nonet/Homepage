@@ -8,6 +8,7 @@ import BOOKSTAND from "./contents/bookStand";
 import QUIZ from "./contents/dddQuize";
 import SPEAKER from "./contents/dddSpeaker";
 import THREADS from "./contents/sdpsThreads";
+import FadeIn from "../fadeIn";
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
@@ -25,7 +26,8 @@ const Main_Text = () => {
   return (
     <>
       <Box sx={{ fontSize: '15px', position: 'absolute', top: '250px', textAlign: "center" }}>
-        今まで作成したWebアプリ<br />一つ作る毎に、学び、成長している
+        <FadeIn text="今まで作成したWebアプリ" />
+        <FadeIn text="一つ作る毎に、学び、成長している" />
       </Box>
       <Box sx={{ top: '400px', position: 'absolute', maxWidth: { xs: 320, sm: 600 }, bgcolor: 'background.paper' }} display="flex" justifyContent="center" >
         <Tabs value={TabValue} onChange={TabChange} variant="scrollable" scrollButtons="auto" aria-label="Tab">
