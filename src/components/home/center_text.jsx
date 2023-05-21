@@ -7,10 +7,7 @@ const Center_Text = () => {
       <Typical
         steps={[
           "Hello!", 2000, "H", 1000,
-          "HOME Page", 3000, "H", 2000,
-          "HikakinTV EVERYDAY", 2000, "H", 1000,
-          "Hogehogehoge...", 2000, "H", 1000,
-          "HOME Page",
+          "HOME Page", 3000, "H",
         ]}
         wrapper="h2"
       />

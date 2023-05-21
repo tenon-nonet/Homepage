@@ -3,6 +3,8 @@ import { AppBar, Box, Toolbar, IconButton, Typography, Container, Button, MenuIt
 import MenuIcon from '@mui/icons-material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import witchA from "../assets/img/witch/witchA.webp";
+
 const pages = [
   { name: 'profile', link: '/profile' },
   { name: 'application', link: '/application' },
@@ -19,7 +21,7 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" top="0px" sx={{ background: "white" }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <CardMedia component="img" image="./images/content.webp" alt="MyLogo" style={{ width: "30px" }} />
+          <CardMedia component="img" image={witchA} alt="MyLogo" style={{ width: "30px" }} />
           <Typography
             variant="h6"
             noWrap
