@@ -8,7 +8,7 @@ const php = () => {
             <Typography variant="p">
                 初めて使用したフレームワーク<br />
                 本管理アプリを作成したが、PHPの基礎が習得できておらず、<br />
-                基礎から学習することの重要性を知る機会となった。<br /><br />
+                基礎から学習することの重要性を知る機会となった。
             </Typography>
             <Typography variant="p">
                 <a href="https://www.hypertextcandy.com/laravel-tutorial-introduction">
