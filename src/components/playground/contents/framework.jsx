@@ -20,7 +20,7 @@ const framework = () => {
       <a href="https://www.hypertextcandy.com/laravel-tutorial-introduction">
         入門Laravelチュートリアル
       </a> <br />Masahiro Harada
-      <CardMedia component="img" image="./images/content.webp" alt="MyIcon" style={{ width: "100%" }} />
+      {/* <CardMedia component="img" image="./images/content.webp" alt="MyIcon" style={{ width: "100%" }} /> */}
       <hr />
 
       <Typography variant="h5">・React</Typography><br />
@@ -29,7 +29,7 @@ const framework = () => {
         PHP,Laravelの時と同様に、JSの学習を基礎から行うきっかけとなった<br />
         このHOMEPageの作成とともにReactの学習を進めていく<br /><br />
       </Typography>
-      <CardMedia component="img" image="./images/content.webp" alt="MyIcon" style={{ width: "100%" }} />
+      {/* <CardMedia component="img" image="./images/content.webp" alt="MyIcon" style={{ width: "100%" }} /> */}
     </>
   );
 };

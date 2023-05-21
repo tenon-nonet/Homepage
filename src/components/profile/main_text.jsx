@@ -4,7 +4,7 @@ const Main_Text = () => {
   return (
     <>
       <Box sx={{ fontSize: '15px', textAlign: "center" }}>
-        <Typography component="p"><FadeIn text="私はてのん。人間のふりをしている。" /></Typography>
+        <Typography component="p"><FadeIn text="経歴をここに書く" /></Typography>
       </Box>
     </>
   );
