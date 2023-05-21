@@ -5,7 +5,6 @@ import { useState } from "react";
 import AI from "./contents/ai";
 import COMMUNITY from "./contents/community";
 import DESIGN from "./contents/design";
-import FRAMEWORK from "./contents/framework";
 import STUDY from "./contents/study";
 import SERVER from "./contents/server";
 import FadeIn from "../fadeIn";
@@ -52,12 +51,9 @@ const Main_Text = () => {
           <DESIGN />
         </TabPanel>
         <TabPanel value={TabValue} index={3}>
-          <FRAMEWORK />
-        </TabPanel>
-        <TabPanel value={TabValue} index={4}>
           <STUDY />
         </TabPanel>
-        <TabPanel value={TabValue} index={5}>
+        <TabPanel value={TabValue} index={4}>
           <SERVER />
         </TabPanel>
       </Box>
