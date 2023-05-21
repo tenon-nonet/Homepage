@@ -3,7 +3,6 @@ import { Typography, CardMedia, } from "@mui/material";
 import discord1 from "../../../assets/img/playgroud/community/discord1.webp"
 import discord2 from "../../../assets/img/playgroud/community/discord2.webp"
 import ikabo1 from "../../../assets/img/playgroud/community/ikabo1.webp"
-import ikabo2 from "../../../assets/img/playgroud/community/ikabo2.webp"
 const Comumnity = () => {
         return (
                 <>
