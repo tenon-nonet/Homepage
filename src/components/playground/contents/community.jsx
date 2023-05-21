@@ -7,20 +7,25 @@ import ikabo2 from "../../../assets/img/playgroud/community/ikabo2.webp"
 const Comumnity = () => {
         return (
                 <>
-                        <Typography variant="h5">・ゆるプロ</Typography>
+                        <Typography variant="h5">・ゆるプロ▽</Typography>
                         <Typography variant="p">
-                                プログラマーコミュニティ「ゆるプロ▽」を作成<br />
-                                継続的な学習のための環境を作り、多くのプログラマーと交流ができる。<br />
+                                Discord上にプログラマーコミュニティ「ゆるプロ▽」を作成<br />
+                                継続的な学習のための環境と、<br />
+                                情報共有の場として活用している。<br /><br />
+                                2023年5月現在42名が所属しており、<br />
+                                多くのプログラミング学習者と交流ができる。<br /><br />
                                 これが無ければ今の私は、ない。
                         </Typography>
                         <CardMedia component="img" image={discord1} alt="MyIcon" style={{ width: "100%" }} />
                         <CardMedia component="img" image={discord2} alt="MyIcon" style={{ width: "100%" }} />
-                        <Typography variant="h5">・イカボッチ</Typography>
+                        <hr /><br /><br />
+                        <Typography variant="h5">・ゲームコミュニティ</Typography>
                         <Typography variant="p">
-                                Splatoon3コミュニティ「イカボッチ」を作成<br />
+                                Discord上にゲームコミュニティを作成した。<br />
+                                前述の「ゆるプロ▽」の原型となるコミュニティになっており、<br />
+                                Discordによる学習環境作成の可能性を知るきっかけとなった。<br /><br />
                         </Typography>
                         <CardMedia component="img" image={ikabo1} alt="MyIcon" style={{ width: "100%" }} />
-                        <CardMedia component="img" image={ikabo2} alt="MyIcon" style={{ width: "100%" }} />
                 </>
         );
 };
