@@ -6,6 +6,7 @@ import { useState } from "react";
 import PHP from "./contents/php";
 import JAVASCRIPT from "./contents/javascript";
 import OVERVIEW from "./contents/overview";
+import GITHUB from "./contents/github";
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -30,8 +31,9 @@ const Main_Text = () => {
       <Box sx={{ top: '400px', position: 'absolute', maxWidth: { xs: 320, sm: 600 }, bgcolor: 'background.paper' }} display="flex" justifyContent="center" >
         <Tabs value={TabValue} onChange={TabChange} variant="scrollable" scrollButtons="auto" aria-label="Tab">
           <Tab label="OVERVIEW" {...a11yProps(0)} />
-          <Tab label="Javascript" {...a11yProps(1)} />
-          <Tab label="PHP" {...a11yProps(1)} />
+          <Tab label="GitHub" {...a11yProps(1)} />
+          <Tab label="PHP" {...a11yProps(2)} />
+          <Tab label="Javascript" {...a11yProps(3)} />
         </Tabs>
       </Box >
       <Box sx={{ fontSize: '15px', position: 'absolute', top: '430px', padding: '40px' }} display="flex" justifyContent="center">
@@ -39,10 +41,13 @@ const Main_Text = () => {
           < OVERVIEW/>
         </TabPanel>
         <TabPanel value={TabValue} index={1}>
-          <JAVASCRIPT />
+          <GITHUB />
         </TabPanel>
         <TabPanel value={TabValue} index={2}>
           <PHP />
+        </TabPanel>
+        <TabPanel value={TabValue} index={3}>
+          <JAVASCRIPT />
         </TabPanel>
       </Box >
     </>

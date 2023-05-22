@@ -1,6 +1,7 @@
 import CENTERTEXT from '../components/home/center_text';
 import UNDERBUTTON from '../components/home/under_button';
 import APPBARRESPRO from '../components/appBarRes';
+import FOOTER from '../components/footer';
 import { Box } from '@mui/material';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <CENTERTEXT />
       <UNDERBUTTON />
       <APPBARRESPRO />
+      <FOOTER />
     </Box>
   )
 };

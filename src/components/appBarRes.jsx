@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 import witchA from "../assets/img/witch/witchA.webp";
+import witchC from "../assets/img/witch/witchC.webp";
 
 const pages = [
   { name: 'profile', link: '/profile' },
@@ -21,7 +22,7 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" top="0px" sx={{ background: "white" }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <CardMedia component="img" image={witchA} alt="MyLogo" style={{ width: "30px" }} />
+          <CardMedia component="img" image={witchC} alt="MyLogo" style={{ width: "50px",marginRight:"10px" }} />
           <Typography
             variant="h6"
             noWrap

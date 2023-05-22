@@ -9,7 +9,7 @@ const dddSpeaker = () => {
                         <Typography variant="p">
                                 VOICEVOXを使って、テキストの読み上げができるのだ。<br />
                                 初めての共同開発したアプリなのだ。<br /><br />
-                                LiveShare、GitHUBを活用して開発を行ったのだ。<br /><br />
+                                LiveShare、GitHubを活用して開発を行ったのだ。<br /><br />
                                 APIを使用した初めてのアプリであり、<br />
                                 初めてフロントエンドを作成したアプリでもあるのだ。<br /><br />
                                 また、初めてデプロイしたアプリでもあるのだ。<br /><br />
