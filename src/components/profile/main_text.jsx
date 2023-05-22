@@ -6,6 +6,7 @@ import { useState } from "react";
 import PHP from "./contents/php";
 import JAVASCRIPT from "./contents/javascript";
 import OVERVIEW from "./contents/overview";
+import SWIFT from "./contents/swift";
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -31,7 +32,8 @@ const Main_Text = () => {
         <Tabs value={TabValue} onChange={TabChange} variant="scrollable" scrollButtons="auto" aria-label="Tab">
           <Tab label="OVERVIEW" {...a11yProps(0)} />
           <Tab label="Javascript" {...a11yProps(1)} />
-          <Tab label="PHP" {...a11yProps(1)} />
+          <Tab label="PHP" {...a11yProps(2)} />
+          <Tab label="SWIFT" {...a11yProps(3)} />
         </Tabs>
       </Box >
       <Box sx={{ fontSize: '15px', position: 'absolute', top: '430px', padding: '40px' }} display="flex" justifyContent="center">
@@ -43,6 +45,9 @@ const Main_Text = () => {
         </TabPanel>
         <TabPanel value={TabValue} index={2}>
           <PHP />
+        </TabPanel>
+        <TabPanel value={TabValue} index={3}>
+          <SWIFT />
         </TabPanel>
       </Box >
     </>

@@ -10,7 +10,7 @@ const Design = () => {
                         <Typography variant="h5">・Figma</Typography>
                         <Typography variant="p">
                                 Webアプリ作成のワイヤーフレームの作成に使用。<br /><br />
-                                画面レイアウトを作成してからアプリの作成を行なっている。<br /><br />
+                                画面レイアウトを準備してからアプリの開発を行なっている。<br /><br />
                                 予定から変更となることもままあるが、<br />
                                 開発の全体像を把握してから開発に取り掛かることで、<br />
                                 作業効率が上がる事を実感。<br /><br />
@@ -22,7 +22,7 @@ const Design = () => {
                         <Typography variant="h5">・Lucidchart</Typography>
                         <Typography variant="p">
                                 フローチャートを作成する際に使用。<br /><br />
-                                paizaの問題を解く際に思考を整理するために使用。<br />
+                                paizaの問題を解く際に思考を整理するために使用し始めた。<br />
                                 基本的なFCの記述方法を学習した。<br /><br />
                                 Figmaと同様に、設計を行なってから開発に取り掛かることで、<br />
                                 作業効率が上がる事を実感することができた。<br /><br />

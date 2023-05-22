@@ -6,9 +6,9 @@ const Center_Text = () => {
     <Box sx={{ fontSize: "20px" }}>
       <Typical
         steps={[
-          "Hello!", 2000, "H", 1000,
-          "HOME Page", 3000, "H",
+          "Hello :)", 500, "H", 500,"HOMEPage",2000,"H", 500,
         ]}
+        loop={Infinity}
         wrapper="h2"
       />
     </Box>

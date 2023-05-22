@@ -9,6 +9,8 @@ const dddThreds = () => {
                                 ２ちゃんねる風の掲示板<br />
                                 PHPを使用して作成。<br />
                                 SQLの基本操作とDBの構造理解を網羅している<br /><br />
+                                コメント、スレッドの管理の為SSH接続を行い、<br />
+                                コマンドライン上でのDB操作の学習も行なった。<br /><br />
                                 現在はコメント投稿、スレッド作成機能のみだが、<br />
                                 削除機能、検索機能を追加する予定。<br /><br />  
                                 <Link href="https://threads.tenon-nonet.com">threads.tenon-nonet.com</Link><br /><br />
