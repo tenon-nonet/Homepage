@@ -3,9 +3,9 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ArchiveIcon from '@mui/icons-material/Archive';
+import PeopleIcon from '@mui/icons-material/People';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import Paper from '@mui/material/Paper';
 
 export default function FixedBottomNavigation() {
@@ -15,7 +15,7 @@ export default function FixedBottomNavigation() {
   return (
     <Box sx={{ pb: 7 }} ref={ref}>
       <CssBaseline />
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0}} elevation={3}>
         <BottomNavigation
           showLabels
           value={value}
@@ -23,9 +23,9 @@ export default function FixedBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-          <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
+          <BottomNavigationAction a href='https://github.com/tenon-nonet' label="Github" icon={<GitHubIcon />} />
+          <BottomNavigationAction a href='https://threads.tenon-nonet.com' label="SDPsThreads" icon={<PeopleIcon />} />
+          <BottomNavigationAction a href='https://speaker.tenon-nonet.com' label="DDDSpeaker" icon={<VolumeUpIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>
