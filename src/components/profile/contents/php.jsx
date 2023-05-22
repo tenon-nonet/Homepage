@@ -11,7 +11,7 @@ const php = () => {
                 読み上げアプリ、掲示板、本管理アプリを作成。<br /><br />
                 また、読み上げアプリの作成にて、<br />
                 初めてGitを活用し、共同で開発を行なった。<br /><br />
-                progate、paiza、Udemy、教本、<br />
+                Progate、paiza、Udemy、教本、<br />
                 経験者から指導していただき学習を行った。<br /><br />
             </Typography>
             <hr />
