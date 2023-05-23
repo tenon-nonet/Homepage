@@ -3,7 +3,6 @@ import { AppBar, Box, Toolbar, IconButton, Typography, Container, Button, MenuIt
 import MenuIcon from '@mui/icons-material/Menu';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
-import witchA from "../assets/img/witch/witchA.webp";
 import witchC from "../assets/img/witch/witchC.webp";
 
 const pages = [
