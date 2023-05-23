@@ -9,7 +9,7 @@ import witchC from "../assets/img/witch/witchC.webp";
 const pages = [
   { name: 'profile', link: '/profile' },
   { name: 'application', link: '/application' },
-  { name: 'playground', link: '/playground' },
+  { name: 'skills', link: '/playground' },
 ];
 
 

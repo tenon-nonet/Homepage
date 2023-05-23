@@ -1,9 +1,10 @@
 
-import { Typography, CardMedia} from "@mui/material";
+import { Typography, CardMedia } from "@mui/material";
 import github1 from "../../../assets/img/profile/github1.webp";
 const github = () => {
     return (
         <>
+            <hr />
             <Typography variant="h5">・GitHub</Typography>
             <Typography variant="p">
                 <a href="https://github.com/tenon-nonet">https://github.com/tenon-nonet</a><br /><br />

@@ -7,6 +7,7 @@ import lucid2 from "../../../assets/img/playgroud/study/lucid2.webp";
 const Design = () => {
         return (
                 <>
+                        <hr />
                         <Typography variant="h5">・Figma</Typography>
                         <Typography variant="p">
                                 Webアプリ作成のワイヤーフレームの作成に使用。<br /><br />

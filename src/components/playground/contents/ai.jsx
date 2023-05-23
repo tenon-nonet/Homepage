@@ -6,6 +6,7 @@ import stable3 from "../../../assets/img/playgroud/ai/stable3.webp";
 const Ai = () => {
         return (
                 <>
+                        <hr />
                         <Typography variant="h5">・ChatGPT</Typography>
                         <Typography variant="p">
                                 技術の進化の象徴的な存在である。<br />
@@ -17,6 +18,14 @@ const Ai = () => {
                                 継続的な学習のアシスタントとして非常に優秀である。<br /><br />
                                 プログラミング講師としての立ち位置としている。<br />
                         </Typography><hr /><br />
+                        <Typography variant="h5">・GitHUB Copilot</Typography>
+                        <Typography variant="p">
+                                5月から使用。<br />
+                                VSCodeでの予測変換の精度が高い。<br />
+                                間違いもある為、都度内容を確認しながらにはなるが、<br />
+                                開発効率が高くなったことは間違いない。<br /><br />
+                                私の学習効率が上がったことも間違いない。<br /><br />
+                        </Typography><hr />
                         <Typography variant="h5">・StableDiffusion</Typography>
                         <Typography variant="p">
                                 画像生成AI。<br /><br />
@@ -29,16 +38,6 @@ const Ai = () => {
                         <CardMedia component="img" image={stable1} alt="MyIcon" style={{ width: "100%" }} />
                         <CardMedia component="img" image={stable2} alt="MyIcon" style={{ width: "100%" }} />
                         <CardMedia component="img" image={stable3} alt="MyIcon" style={{ width: "100%" }} />
-                        <hr /><br />
-                        
-                        <Typography variant="h5">・GitHUB Copilot</Typography>
-                        <Typography variant="p">
-                                5月から使用。<br />
-                                VSCodeでの予測変換の精度が高い。<br />
-                                間違いもある為、都度内容を確認しながらにはなるが、<br />
-                                開発効率が高くなったことは間違いない。<br /><br />
-                                私の学習効率が上がったことも間違いない。<br /><br />
-                        </Typography><hr />
                 </>
         );
 };

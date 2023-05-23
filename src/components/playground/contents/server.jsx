@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 const Server = () => {
         return (
                 <>
+                        <hr />
                         <Typography variant="h5">・AWS</Typography>
                         <Typography variant="p">
                                 Webアプリを初めてデプロイするために使用した。<br /><br />

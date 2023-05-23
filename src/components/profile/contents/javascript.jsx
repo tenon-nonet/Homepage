@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 const javascript = () => {
   return (
     <>
+      <hr />
       <Typography variant="h5">・Javascript</Typography>
       <Typography variant="p">
         世界で最も人気のある言語ということもあり、学習を開始。<br />
