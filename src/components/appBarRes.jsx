@@ -1,16 +1,15 @@
-import { useState } from 'react';
-import { AppBar, Box, Toolbar, IconButton, Typography, Container, Button, MenuItem, CardMedia, Drawer, useMediaQuery } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import React, { useState } from 'react';
+import { AppBar, Box, Toolbar, Typography, Container, Button, CardMedia, useMediaQuery } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 import witchC from "../assets/img/witch/witchC.webp";
+import NavigationMenu from './resBar/navigationMenu';
 
 const pages = [
   { name: 'profile', link: '/profile' },
   { name: 'application', link: '/application' },
   { name: 'skills', link: '/playground' },
 ];
-
 
 function ResponsiveAppBar() {
   const isSmallScreen = useMediaQuery("(max-width:899px)");
@@ -21,7 +20,7 @@ function ResponsiveAppBar() {
     <AppBar position="fixed" top="0px" sx={{ background: "white" }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <CardMedia component="img" image={witchC} alt="MyLogo" style={{ width: "50px",marginRight:"10px" }} />
+          <CardMedia component="img" image={witchC} alt="MyLogo" style={{ width: "50px", marginRight: "10px" }} />
           <Typography
             variant="h6"
             noWrap
@@ -39,6 +38,7 @@ function ResponsiveAppBar() {
           >
             HOMEPage
           </Typography>
+
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -58,37 +58,11 @@ function ResponsiveAppBar() {
           >
             HOMEPage
           </Typography>
-          {isSmallScreen && <>
-            <IconButton
-              edge="end"
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={toggleDrawer(true)}
-              color="black"
-              sx={{ ml: 3 }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="right"
-              open={isOpen}
-              aria-label="メニュー"
-              onClose={toggleDrawer(false)}
-              PaperProps={{
-                sx: {
-                  backgroundColor: "#ffffff",
-                  color: "#ffffff",
-                },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.name} component={Link} to={page.link}>
-                  <Typography fontSize={"20px"} textAlign="center" style={{ marginTop: "20px" }} fontFamily={"sans-serif"} sx={{ color: "gray" }}>{page.name}</Typography>
-                </MenuItem>
-              ))}
-            </Drawer></>}
+
+          {isSmallScreen && (
+            <NavigationMenu isOpen={isOpen} toggleDrawer={toggleDrawer} pages={pages} />
+          )}
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -100,11 +74,11 @@ function ResponsiveAppBar() {
                 {page.name}
               </Button>
             ))}
-
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;
