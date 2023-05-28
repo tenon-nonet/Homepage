@@ -4,6 +4,7 @@ import thread2 from "../../../assets/img/application/thread/thread2.webp";
 const dddThreds = () => {
         return (
                 <>
+                        <hr />
                         <Typography variant="h5">・SDPs Threads</Typography><br />
                         <Typography variant="p">
                                 ２ちゃんねる風の掲示板<br />
@@ -12,11 +13,11 @@ const dddThreds = () => {
                                 コメント、スレッドの管理の為SSH接続を行い、<br />
                                 コマンドライン上でのDB操作の学習も行なった。<br /><br />
                                 現在はコメント投稿、スレッド作成機能のみだが、<br />
-                                削除機能、検索機能を追加する予定。<br /><br />  
+                                削除機能、検索機能を追加する予定。<br /><br />
                                 <Link href="https://threads.tenon-nonet.com">threads.tenon-nonet.com</Link><br /><br />
-                                
+
                         </Typography>
-                        <CardMedia sx={{marginTop: "10px"}} component="img" image={thread1} alt="MyIcon" style={{ height: "100%" }} />
+                        <CardMedia sx={{ marginTop: "10px" }} component="img" image={thread1} alt="MyIcon" style={{ height: "100%" }} />
                         <CardMedia component="img" image={thread2} alt="MyIcon" style={{ height: "100%" }} />
                 </>
         );

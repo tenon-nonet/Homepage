@@ -5,6 +5,7 @@ import dddspeaker2 from "../../../assets/img/application/dddspeaker/dddspeaker2.
 const dddSpeaker = () => {
         return (
                 <>
+                        <hr />
                         <Typography variant="h5">・DDDSpeaker</Typography><br />
                         <Typography variant="p">
                                 VOICEVOXを使って、テキストの読み上げができるのだ。<br />
@@ -15,7 +16,7 @@ const dddSpeaker = () => {
                                 また、初めてデプロイしたアプリでもあるのだ。<br /><br />
                                 <Link href="https://speaker.tenon-nonet.com">speaker.tenon-nonet.com</Link>
                         </Typography>
-                        <CardMedia sx={{marginTop: "10px"}} component="img" image={dddspeaker1} alt="dddspeaker1" style={{ height: "100%" }} />
+                        <CardMedia sx={{ marginTop: "10px" }} component="img" image={dddspeaker1} alt="dddspeaker1" style={{ height: "100%" }} />
                         <CardMedia component="img" image={dddspeaker2} alt="dddspeaker2" style={{ height: "100%" }} />
                 </>
         );

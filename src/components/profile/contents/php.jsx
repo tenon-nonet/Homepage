@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 const php = () => {
     return (
         <>
+            <hr />
             <Typography variant="h5">・PHP</Typography><br />
             <Typography variant="p">
                 2つ目に学習を始めた言語。<br />
@@ -36,7 +37,7 @@ const php = () => {
                     よくわかるPHPの教科書
                 </a><br />
                 たにぐちまこと 著<br /><br />
-                </Typography>
+            </Typography>
             <Typography variant="p">
                 <a href="https://www.hypertextcandy.com/laravel-tutorial-introduction">
                     入門Laravelチュートリアル
